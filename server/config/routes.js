@@ -17,8 +17,8 @@ module.exports = function(app){
   // app.get('/topic/:id/post/:id/comments', modelsController.getComments);
   // app.get('/topic/:id/posts/:id/comment/:id', modelsController.getComment);
   
-  app.get('/comments', modelsController.getComments);
-  app.get('/comment/:id', modelsController.getComment);
+  // app.get('/comments', modelsController.getComments);
+  // app.get('/comment/:id', modelsController.getComment);
 
   
 

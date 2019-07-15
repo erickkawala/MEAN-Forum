@@ -79,8 +79,8 @@ module.exports.updatePost = function(req,res){
   }
 }
 
-module.exports.updateComment = function(req,res){
-  if(req.body.key === "comment"){
-    Comment.update({_id:req.params.id},)
-  }
-}
+// module.exports.updateComment = function(req,res){
+//   if(req.body.key === "comment"){
+//     Comment.update({_id:req.params.id},)
+//   }
+// }
