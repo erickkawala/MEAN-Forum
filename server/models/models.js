@@ -18,7 +18,7 @@ var postSchema = mongoose.Schema({
   userId:{type:mongoose.Schema.Types.ObjectId, ref:'User'},
   topicId:{type:mongoose.Schema.Types.ObjectId, ref:'Topic'},
   like: Number,
-  dislike: Number
+  dislike: Number,
 }, {timestamps:true});
 
 mongoose.model('Post',postSchema)
