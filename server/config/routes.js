@@ -2,7 +2,7 @@ var modelsController = require('../controllers/models_controller.js')
 
 module.exports = function(app){
   app.post('/topic', modelsController.newTopic);
-  app.get('/topic', modelsController.getTopics);
+  app.get('/topics', modelsController.getTopics);
   app.get('/topic/:id', modelsController.getTopic);
   app.get('/topic/:id', modelsController.topicDetail);
   
@@ -17,8 +17,9 @@ module.exports = function(app){
   // app.get('/topic/:id/post/:id/comments', modelsController.getComments);
   // app.get('/topic/:id/posts/:id/comment/:id', modelsController.getComment);
   
-  // app.get('/comments', modelsController.getComments);
-  // app.get('/comment/:id', modelsController.getComment);
+  app.get('/comment', modelsController.newComment);
+  app.get('/comments', modelsController.getComments);
+  app.post('/comment/:id', modelsController.updateComment);
 
   
 

@@ -22,6 +22,11 @@ module.exports.getComment = function(req,res){
     modelsResult(res,err,result)
   })
 };
+module.exports.updateComment = function (req, res) {
+  Comment.update(req.body, function (err, result) {
+    modelsResult(res, err, result)
+  })
+};
 module.exports.updatePost = function (req, res) {
   if (req.body.key === "like") {
     Post.update({ _id: req.params.id }, { $inc: { like: 1 } }, function (err, result) {
